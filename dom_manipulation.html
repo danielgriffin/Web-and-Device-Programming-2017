@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+
+			//define a function before we can use it
+			function myFunk() {
+
+				//creating a local variable that will contain our block of HTML
+				myElement = document.getElementById('myDiv');
+
+				//set the innerHTML property of that html element
+				myElement.innerHTML = "hello";
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<!-- just a simple html node to hold our output.  note the id attribute -->
+		<div id="myDiv"></div>
+		
+		<!-- this button has an onClick event handler that allows us to fire some js-->
+		<button onClick="myFunk()" >clicky clicky </button>
+
+		<br>
+
+		<!-- this buttons onClick uses the built in alert() method. -->
+		<button onClick="alert('oh, hai!!')" > hello </button>
+
+	</body>
+</html>
+
